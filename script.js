@@ -56,13 +56,11 @@ document.addEventListener("keydown", (e) => {
 function gameLoop() {
 	if (paused) return;
 
-	// Clear screen
+	// очистка
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-	// Move snake
 	moveSnake();
 
-	// Draw elements
 	drawSnake();
 	drawApple();
 }
